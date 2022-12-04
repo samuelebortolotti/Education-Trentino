@@ -1,0 +1,94 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dqv:   <http://www.w3.org/ns/dqv#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/7cb615e2-9ecd-43d0-b917-17eebbd50636>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "Concept of the Vivoscuola Dataset" ;
+        dct:title        "Vivoscuola concept" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/d3a0d642-84d5-4ebc-9ed6-e520f3340365>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "None" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/2dee49b8-e959-4eaa-a3d1-48342784a61d>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "HTML" ;
+        dct:description   "List of school information" ;
+        dct:format        "HTML" ;
+        dct:identifier    "https://www.vivoscuola.it/Scuole2"^^xsd:anyURI ;
+        dct:issued        "2011-09-10T16:27:17Z"^^xsd:dateTime ;
+        dct:language      "en-EN" ;
+        dct:modified      "2022-09-05T16:27:17Z"^^xsd:dateTime ;
+        dct:title         "Vivoscuola, il portale della scuola in Trentino" ;
+        dct:type          "dcat:Distribution"^^xsd:anyURI ;
+        dcat:accessURL    "https://www.vivoscuola.it/Scuole2"^^xsd:anyURI ;
+        dcat:downloadURL  "https://www.vivoscuola.it/Scuole2"^^xsd:anyURI ;
+        dcat:mediaType    "text/html" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/3781753d-6d8a-460b-ba7d-11386779cb23>
+        rdf:type          dct:PeriodOfTime ;
+        schema:endDate    "2022-09-05T19:37:51Z"^^xsd:dateTime ;
+        schema:startDate  "2009-01-01T19:37:51Z"^^xsd:dateTime .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/e892ce35-d4e1-468c-9df5-c0733faa444c>
+        rdf:type             schema:Organization ;
+        schema:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/d3a0d642-84d5-4ebc-9ed6-e520f3340365> ;
+        schema:identifier    "https://en.wikipedia.org/wiki/Municipalities_of_Trentino"^^xsd:anyURI ;
+        schema:legalName     "The list shows the municipalities (comuni) of the autonomous province of Trento, Italy" ;
+        schema:leiCode       "https://en.wikipedia.org/wiki/Municipalities_of_Trentino" ;
+        schema:url           "https://en.wikipedia.org/wiki/Municipalities_of_Trentino"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/8ab7280e-0772-4617-a052-fb38cab23de0>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "free" ;
+        dct:created        "2009-01-01T00:00:00Z"^^xsd:dateTime ;
+        dct:description    "Dataset about schools in Trentino" ;
+        dct:identifier     "https://www.vivoscuola.it/Scuole2"^^xsd:anyURI ;
+        dct:issued         "2011-04-25T19:36:19Z"^^xsd:dateTime ;
+        dct:language       "en-EN" ;
+        dct:modified       "2022-09-05T19:36:19Z"^^xsd:dateTime ;
+        dct:provenance     "Vivoscuola Trentino" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/e892ce35-d4e1-468c-9df5-c0733faa444c> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/81c713e2-ed14-4e72-aa78-14b31823c8e6> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/3781753d-6d8a-460b-ba7d-11386779cb23> ;
+        dct:title          "Vivoscuola, il portale della scuola in Trentino" ;
+        dct:type           "dct:Dataset"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/d3a0d642-84d5-4ebc-9ed6-e520f3340365> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/2dee49b8-e959-4eaa-a3d1-48342784a61d> ;
+        dcat:keyword       "schools, Trentino, Italy" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/9e6a61c3-4e43-4e6c-a53c-d75a2dcdc7bb> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/81c713e2-ed14-4e72-aa78-14b31823c8e6>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(11.116667 46.066666)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/9e6a61c3-4e43-4e6c-a53c-d75a2dcdc7bb>
+        rdf:type         skos:Concept ;
+        skos:definition  "Trentino, Italy, School, Vivoscuola" ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/7cb615e2-9ecd-43d0-b917-17eebbd50636> ;
+        skos:prefLabel   "School" .
