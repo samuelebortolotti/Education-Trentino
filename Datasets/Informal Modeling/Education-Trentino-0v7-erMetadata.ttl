@@ -1,0 +1,173 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dqv:   <http://www.w3.org/ns/dqv#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Agent/828bf6b9-9f4b-4355-bcd0-d68b188811cb>
+        rdf:type   foaf:Agent ;
+        dct:type   <https://www.epos-eu.org/epos-dcat-ap#Concept/74cfe6d8-39b1-4491-a4ca-dba88fdccf10> ;
+        foaf:name  "Erich Robbi" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/84efa52e-3879-4d09-b0b9-36362e915866>
+        rdf:type          dct:PeriodOfTime ;
+        schema:endDate    "2022-11-23T00:00:00Z"^^xsd:dateTime ;
+        schema:startDate  "2022-11-23T00:00:00Z"^^xsd:dateTime .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/a21146bd-a38c-49fe-a02f-f8575d1d73e2>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "The position or rank of someone or something when compared to others in a society, organization, group, etc." ;
+        dct:title        "Status" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/3a2e0c02-aeba-44d1-b688-a5e21d81d088>
+        rdf:type                dcat:Dataset ;
+        dct:accessRights        "Public" ;
+        dct:accrualPeriodicity  "Once"^^xsd:anyURI ;
+        dct:conformsTo          "iTelos" ;
+        dct:created             "2022-11-23T00:00:00Z"^^xsd:dateTime ;
+        dct:description         "This research seeks to provide a complete analysis of the educational facilities in Trentino\nwhich comprehend geospatial and temporal domains.\nThe Trentino area has a wide range of educational institutions, including public and private\nkindergartens, elementary schools, secondary schools, universities, and other vocational train-\ning facilities. The information regarding the school facilities in Trentino as well as the municipal-\nities of the autonomous region of Trento is part of the project domain. Moreover, the courses\noffered by each educational facility with their associated duration are included.\nInitially, the data we have managed to collect ranges between 2014 and 2022. We had ex-\ntremely updated information concerning university courses and general institutional information,\nand outdated material concerning schools’ courses. However, with additional data scraping, we\nmanaged to obtain more recent data. We claim that the time boundary is restricted to the current\nfew years (2020 - 2022)." , "Samuele Bortolotti (https://github.com/samuelebortolotti) and Erich Robbi (https://github.com/erich-r) are the members assigned to the realization and finalization.", "For more information see the following websites: https://github.com/samuelebortolotti/Education-Trentino" , "ER Model Metadata Regarding Education in Trentino" ;
+        dct:identifier          "https://github.com/samuelebortolotti/Education-Trentino/tree/main/Teleologies/Informal%20Modeling"^^xsd:anyURI ;
+        dct:issued              "2022-11-23T00:00:00Z"^^xsd:dateTime ;
+        dct:language            "English" ;
+        dct:modified            "2022-11-23T00:00:00Z"^^xsd:dateTime ;
+        dct:publisher           <https://www.epos-eu.org/epos-dcat-ap#Agent/f9cfb89e-3bb9-41ba-b263-e0386fce30ed> , <https://www.epos-eu.org/epos-dcat-ap#Organization/2dad489f-4ce3-4e0d-9122-b70df55b8ef2> , <https://www.epos-eu.org/epos-dcat-ap#Agent/828bf6b9-9f4b-4355-bcd0-d68b188811cb> ;
+        dct:temporal            <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/84efa52e-3879-4d09-b0b9-36362e915866> ;
+        dct:title               "Entity Relational Model Metadata" ;
+        dct:type                "Collection"^^xsd:anyURI ;
+        dcat:contactPoint       <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/3a8a3044-3e7a-463d-94d9-15c4f4822938> , <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/ca07b831-220f-4c49-bc3b-6e8215eb3238> ;
+        dcat:distribution       <https://www.epos-eu.org/epos-dcat-ap#Distribution/2d8e5529-0e68-4e0d-af09-49a96f1c6c25> ;
+        dcat:keyword            "Knowledge and Data integration" , "Erich Robbi" , "UniTN" , "University of Trento" , "Trentino" , "Samuele Bortolotti" , "iTelos" , "Knowledge and Graph Engineering" ;
+        dcat:landingPage        "https://github.com/samuelebortolotti/Education-Trentino" ;
+        dcat:theme              <https://www.epos-eu.org/epos-dcat-ap#Concept/4040fa1c-755a-4706-9fcd-b2e9d6fbb755> , <https://www.epos-eu.org/epos-dcat-ap#Concept/520bf2b3-6fcc-45ad-971a-b17df5fe98f0> ;
+        foaf:page               "https://github.com/samuelebortolotti/Education-Trentino" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PostalAddress/b0bb325d-f408-4dac-80e0-2389d8efb97f>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "IT" ;
+        schema:addressLocality  "Povo (TN)" ;
+        schema:postalCode       "I-38123" ;
+        schema:streetAddress    "Via Sommarive 9" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/4040fa1c-755a-4706-9fcd-b2e9d6fbb755>
+        rdf:type         skos:Concept ;
+        skos:definition  "Education Institute is the facilities where people learn and improve themselves through practice and theory." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/f913bd20-8e7b-4d82-9688-ca745a432f24> ;
+        skos:prefLabel   "Educational Institute" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/74cfe6d8-39b1-4491-a4ca-dba88fdccf10>
+        rdf:type         skos:Concept ;
+        skos:definition  "Member" ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/17ebceb0-a50b-4801-82df-cc0d484ffa90> ;
+        skos:prefLabel   "Project Member" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/b9645f82-9500-414c-a51d-255ff657c69e>
+        rdf:type         skos:Concept ;
+        skos:definition  "Containing all the necessary parts, answers, or information." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/a21146bd-a38c-49fe-a02f-f8575d1d73e2> ;
+        skos:prefLabel   "Completed" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PostalAddress/cd879ddb-55b6-4620-a0e4-c85a2df9f483>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "IT" ;
+        schema:addressLocality  "Trento" ;
+        schema:postalCode       "38122" ;
+        schema:streetAddress    "Via Calepina 14" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/f913bd20-8e7b-4d82-9688-ca745a432f24>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "Education is a purposeful activity directed at achieving certain aims, such as transmitting knowledge or fostering skills and character traits." ;
+        dct:title        "Education" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/2d8e5529-0e68-4e0d-af09-49a96f1c6c25>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "UML" ;
+        dct:description  "Entity Relational Model regarding Education in Trentino" ;
+        dct:format       "application/pdf" ;
+        dct:identifier   "https://github.com/samuelebortolotti/Education-Trentino/tree/main/Teleologies/Informal%20Modeling"^^xsd:anyURI ;
+        dct:issued       "2022-11-23T00:00:00Z"^^xsd:dateTime ;
+        dct:language     "English" ;
+        dct:license      "https://opensource.org/licenses/MIT"^^xsd:anyURI ;
+        dct:modified     "2022-11-23T00:00:00Z"^^xsd:dateTime ;
+        dct:rights       "https://opensource.org/licenses/MIT" ;
+        dct:title        "Entity Relational Model" ;
+        dct:type         "Document"^^xsd:anyURI ;
+        adms:status      <https://www.epos-eu.org/epos-dcat-ap#Concept/b9645f82-9500-414c-a51d-255ff657c69e> ;
+        dcat:accessURL   "https://github.com/samuelebortolotti/Education-Trentino/tree/main/Teleologies/Informal%20Modeling"^^xsd:anyURI ;
+        dcat:mediaType   "image/pdf" ;
+        foaf:page        "https://github.com/samuelebortolotti/Education-Trentino" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/2dad489f-4ce3-4e0d-9122-b70df55b8ef2>
+        rdf:type           schema:Organization ;
+        schema:address     <https://www.epos-eu.org/epos-dcat-ap#PostalAddress/b0bb325d-f408-4dac-80e0-2389d8efb97f> ;
+        schema:email       "knowdive@disi.unitn.it" ;
+        schema:identifier  "http://knowdive.disi.unitn.it"^^xsd:anyURI ;
+        schema:legalName   "Knowdive" ;
+        schema:leiCode     "http://knowdive.disi.unitn.it" ;
+        schema:logo        "http://knowdive.disi.unitn.it/wp-content/uploads/knowdive-new-logo.png"^^xsd:anyURI ;
+        schema:memberOf    <https://www.epos-eu.org/epos-dcat-ap#Organization/78574deb-e40e-4c05-a5c6-40beeef01aa0> ;
+        schema:url         "http://knowdive.disi.unitn.it"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/17ebceb0-a50b-4801-82df-cc0d484ffa90>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "Member of the Education in Trentino Project\t" ;
+        dct:title        "Member" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Agent/f9cfb89e-3bb9-41ba-b263-e0386fce30ed>
+        rdf:type   foaf:Agent ;
+        dct:type   <https://www.epos-eu.org/epos-dcat-ap#Concept/74cfe6d8-39b1-4491-a4ca-dba88fdccf10> ;
+        foaf:name  "Samuele Bortolotti, Erich Robbi" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/ca07b831-220f-4c49-bc3b-6e8215eb3238>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "en-US" , "it-IT" ;
+        schema:contactType        "Member" ;
+        schema:email              "samuele.bortolotti@studenti.unitn.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5edb028b-96af-4035-8d62-c253acd5a3c5>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "Domain of Interest" ;
+        dct:title        "iTelos Principles" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/3a8a3044-3e7a-463d-94d9-15c4f4822938>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" , "en-US" ;
+        schema:contactType        "Member" ;
+        schema:email              "erich.robbi@studenti.unitn.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/78574deb-e40e-4c05-a5c6-40beeef01aa0>
+        rdf:type           schema:Organization ;
+        schema:address     <https://www.epos-eu.org/epos-dcat-ap#PostalAddress/cd879ddb-55b6-4620-a0e4-c85a2df9f483> ;
+        schema:email       "ateneo@unitn.it" , "ateneo@pec.unitn.it" ;
+        schema:identifier  "www.unitn.it"^^xsd:anyURI ;
+        schema:legalName   "Università degli Studi di Trento" ;
+        schema:leiCode     "00340520220" ;
+        schema:logo        "https://static-cdn.unitn.it/sites/www.unitn.it/themes/unitn_theme/images/newlogo_unitn_en.png"^^xsd:anyURI ;
+        schema:telephone   "0461281111" ;
+        schema:url         "www.unitn.it"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/520bf2b3-6fcc-45ad-971a-b17df5fe98f0>
+        rdf:type         skos:Concept ;
+        skos:definition  "Inception is the second iTelos phase:\r\nInputs:\r\n  - Classified Competency Questions (CQ)\r\n  - Datasets\r\n  - Reference teleologies\r\nOutputs:\r\n  - ER Model\r\n  - Selected Datasets" ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5edb028b-96af-4035-8d62-c253acd5a3c5> ;
+        skos:prefLabel   "Informal Modeling Phase" .
