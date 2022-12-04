@@ -1,0 +1,132 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dqv:   <http://www.w3.org/ns/dqv#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/91072b16-c630-4093-b376-138acb4b2da5>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "email" ;
+        schema:email              "gruppoportale@provincia.tn.it" ;
+        schema:telephone          "0461495111" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/7cb615e2-9ecd-43d0-b917-17eebbd50636>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "Concept of the Trentino Study Course Dataset" ;
+        dct:title        "Dataset concept" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/d3a0d642-84d5-4ebc-9ed6-e520f3340365>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "it-IT" ;
+        schema:contactType        "email" ;
+        schema:email              "serv.formazione@provincia.tn.it" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/2dee49b8-e959-4eaa-a3d1-48342784a61d>
+        rdf:type          dcat:Distribution ;
+        dct:conformsTo    "http://www.w3.org/2001/XMLSchema-instance" ;
+        dct:description   "List of courses of study of Trentino schools along with description and status of activity" ;
+        dct:format        "http://www.w3.org/2001/XMLSchema-instance"^^xsd:anyURI ;
+        dct:identifier    "https://dati.trentino.it/dataset/823309b7-d59e-4bdc-ae14-9a3611c12b27/resource/23d28ec8-c2cc-41cc-80af-6f9443bbbca2/download/exportcorsi10092014.xml"^^xsd:anyURI ;
+        dct:issued        "2011-09-10T16:27:17Z"^^xsd:dateTime ;
+        dct:language      "it-IT" ;
+        dct:license       "https://creativecommons.org/publicdomain/zero/1.0/deed.it"^^xsd:anyURI ;
+        dct:modified      "2014-09-10T16:27:17Z"^^xsd:dateTime ;
+        dct:title         "exportcorsi10092014.xml" ;
+        dct:type          "dcat:Distribution"^^xsd:anyURI ;
+        dcat:accessURL    "https://dati.trentino.it/dataset/823309b7-d59e-4bdc-ae14-9a3611c12b27/resource/23d28ec8-c2cc-41cc-80af-6f9443bbbca2/download/exportcorsi10092014.xml"^^xsd:anyURI ;
+        dcat:downloadURL  "https://dati.trentino.it/dataset/823309b7-d59e-4bdc-ae14-9a3611c12b27/resource/23d28ec8-c2cc-41cc-80af-6f9443bbbca2/download/exportcorsi10092014.xml"^^xsd:anyURI ;
+        dcat:mediaType    " application/xhtml+xml" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/3781753d-6d8a-460b-ba7d-11386779cb23>
+        rdf:type          dct:PeriodOfTime ;
+        schema:endDate    "2014-09-10T19:37:51Z"^^xsd:dateTime ;
+        schema:startDate  "2014-09-10T19:37:51Z"^^xsd:dateTime .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/e892ce35-d4e1-468c-9df5-c0733faa444c>
+        rdf:type             schema:Organization ;
+        schema:address       <https://www.epos-eu.org/epos-dcat-ap#PostalAddress/985e9420-0d39-42db-836d-e4bd0b236a0c> ;
+        schema:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/d3a0d642-84d5-4ebc-9ed6-e520f3340365> ;
+        schema:email         "serv.formazione@provincia.tn.it" ;
+        schema:identifier    "W05601" ;
+        schema:legalName     "Servizio formazione professionale, formazione terziaria e funzioni di sistema" ;
+        schema:leiCode       "W05601" ;
+        schema:memberOf      <https://www.epos-eu.org/epos-dcat-ap#Organization/a7057281-4a43-4cd2-8556-372e40f8d710> ;
+        schema:telephone     "0461491377" ;
+        schema:url           "https://www.provincia.tn.it/Amministrazione/Strutture-organizzative/Servizio-formazione-prof.le-formazione-terziaria-e-funz.-di-sistema"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/8ab7280e-0772-4617-a052-fb38cab23de0>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "free" ;
+        dct:conformsTo     "http://www.w3.org/2001/XMLSchema-instance" ;
+        dct:created        "2014-09-10T19:36:18Z"^^xsd:dateTime ;
+        dct:description    "List of study courses of Trentino schools with description and status of activity." ;
+        dct:identifier     "p_TN:90e4dd5d-f967-4a0a-854a-a8bcef48114b" ;
+        dct:issued         "2014-09-10T19:36:19Z"^^xsd:dateTime ;
+        dct:language       "it-IT" ;
+        dct:modified       "2014-09-10T19:36:19Z"^^xsd:dateTime ;
+        dct:provenance     "Servizio formazione professionale, formazione terziaria e funzioni di sistema" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/e892ce35-d4e1-468c-9df5-c0733faa444c> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/81c713e2-ed14-4e72-aa78-14b31823c8e6> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/3781753d-6d8a-460b-ba7d-11386779cb23> ;
+        dct:title          "Corsi di studio delle scuole Trentine" ;
+        dct:type           "dct:Dataset"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/d3a0d642-84d5-4ebc-9ed6-e520f3340365> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/2dee49b8-e959-4eaa-a3d1-48342784a61d> ;
+        dcat:keyword       "education, istitution, school organization" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/9e6a61c3-4e43-4e6c-a53c-d75a2dcdc7bb> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/81c713e2-ed14-4e72-aa78-14b31823c8e6>
+        rdf:type  dct:Location .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/a7057281-4a43-4cd2-8556-372e40f8d710>
+        rdf:type             schema:Organization ;
+        schema:address       <https://www.epos-eu.org/epos-dcat-ap#PostalAddress/41881aae-6d13-468e-a1f6-1ad528a069e5> ;
+        schema:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/91072b16-c630-4093-b376-138acb4b2da5> ;
+        schema:email         "gruppoportale@provincia.tn.it" ;
+        schema:identifier    "https://www.provincia.tn.it/Amministrazione"^^xsd:anyURI ;
+        schema:legalName     "Provicia Autonoma di Trento" ;
+        schema:leiCode       "00337460224" ;
+        schema:telephone     "0461495111" ;
+        schema:url           "https://www.provincia.tn.it/Amministrazione"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#PostalAddress/985e9420-0d39-42db-836d-e4bd0b236a0c>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "IT" ;
+        schema:addressLocality  "Trento" ;
+        schema:postalCode       "16121" ;
+        schema:streetAddress    "15 Piazza Dante" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/9e6a61c3-4e43-4e6c-a53c-d75a2dcdc7bb>
+        rdf:type         skos:Concept ;
+        skos:definition  "Education, culture and sport" ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/7cb615e2-9ecd-43d0-b917-17eebbd50636> ;
+        skos:prefLabel   "Culture" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PostalAddress/41881aae-6d13-468e-a1f6-1ad528a069e5>
+        rdf:type                schema:PostalAddress ;
+        schema:addressCountry   "IT" ;
+        schema:addressLocality  "Trento" ;
+        schema:postalCode       "16121" ;
+        schema:streetAddress    "15 Piazza Dante" .
