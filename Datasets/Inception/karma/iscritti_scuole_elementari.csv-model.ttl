@@ -1,0 +1,194 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1gjc6a48tx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "iscritti_scuole_elementari.csv" ;
+	km-dev:modelPublicationTime "1670077813021"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Column_2\"}],[{\"columnName\":\"Iscritti alle scuole elementari\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Column_2\"}],[{\"columnName\":\"Iscritti alle scuole elementari\"}]]" ;
+	km-dev:hasModelLabel "iscritti_scuole_elementari.csv" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Iscritti alle scuole elementari\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Name\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division/Subregional_Academic_Division1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Iscritti alle scuole elementari\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Iscritti alle scuole elementari\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Column_2\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Number_Students_Enrolled_in_Primary_School\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division/Subregional_Academic_Division1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Column_2\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Column_2\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_104cbbd3-ac8e-4fa7-94a6-e37e01459f73 a rr:TriplesMap .
+
+_:node1gjc6a48tx1 km-dev:hasTriplesMap km-dev:TriplesMap_104cbbd3-ac8e-4fa7-94a6-e37e01459f73 .
+
+km-dev:TriplesMap_104cbbd3-ac8e-4fa7-94a6-e37e01459f73 km-dev:isPartOfMapping _:node1gjc6a48tx1 .
+
+_:node1gjc6a48tx2 rr:tableName "iscritti_scuole_elementari.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1gjc6a48tx1 .
+
+_:node1gjc6a48tx1 km-dev:hasLogicalTable _:node1gjc6a48tx2 .
+
+km-dev:TriplesMap_104cbbd3-ac8e-4fa7-94a6-e37e01459f73 rr:logicalTable _:node1gjc6a48tx2 ;
+	rr:subjectMap _:node1gjc6a48tx3 .
+
+_:node1gjc6a48tx1 km-dev:hasSubjectMap _:node1gjc6a48tx3 .
+
+_:node1gjc6a48tx3 km-dev:isPartOfMapping _:node1gjc6a48tx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Subregional_Academic_Division1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_42e870b8-95ac-4544-a3de-dd709506abb0 rr:predicate <http://knowdive.disi.unitn.it/etype#has_Name> .
+
+_:node1gjc6a48tx4 rr:column "Iscritti alle scuole elementari" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6a48tx1 .
+
+_:node1gjc6a48tx1 km-dev:hasObjectMap _:node1gjc6a48tx4 .
+
+km-dev:PredicateObjectMap_42e870b8-95ac-4544-a3de-dd709506abb0 rr:objectMap _:node1gjc6a48tx4 .
+
+km-dev:TriplesMap_104cbbd3-ac8e-4fa7-94a6-e37e01459f73 rr:predicateObjectMap km-dev:PredicateObjectMap_42e870b8-95ac-4544-a3de-dd709506abb0 .
+
+km-dev:PredicateObjectMap_42e870b8-95ac-4544-a3de-dd709506abb0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6a48tx1 .
+
+_:node1gjc6a48tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_42e870b8-95ac-4544-a3de-dd709506abb0 .
+
+km-dev:PredicateObjectMap_b6301b5c-8223-4c53-b34e-f259505ec21e rr:predicate <http://knowdive.disi.unitn.it/etype#has_Number_Students_Enrolled_in_Primary_School> .
+
+_:node1gjc6a48tx5 rr:column "Column_2" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6a48tx1 .
+
+_:node1gjc6a48tx1 km-dev:hasObjectMap _:node1gjc6a48tx5 .
+
+km-dev:PredicateObjectMap_b6301b5c-8223-4c53-b34e-f259505ec21e rr:objectMap _:node1gjc6a48tx5 .
+
+km-dev:TriplesMap_104cbbd3-ac8e-4fa7-94a6-e37e01459f73 rr:predicateObjectMap km-dev:PredicateObjectMap_b6301b5c-8223-4c53-b34e-f259505ec21e .
+
+km-dev:PredicateObjectMap_b6301b5c-8223-4c53-b34e-f259505ec21e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6a48tx1 .
+
+_:node1gjc6a48tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b6301b5c-8223-4c53-b34e-f259505ec21e .

@@ -1,0 +1,116 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1gje84ii6x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "courses_offered_in_trentino_school.csv" ;
+	km-dev:modelPublicationTime "1670146837062"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"descrizione\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"descrizione\"}]]" ;
+	km-dev:hasModelLabel "courses_offered_in_trentino_school.csv" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[{
+    \"commandName\": \"SetSemanticTypeCommand\",
+    \"model\": \"new\",
+    \"inputParameters\": [
+        {
+            \"name\": \"hNodeId\",
+            \"type\": \"hNodeId\",
+            \"value\": [{\"columnName\": \"descrizione\"}]
+        },
+        {
+            \"name\": \"worksheetId\",
+            \"type\": \"worksheetId\",
+            \"value\": \"W\"
+        },
+        {
+            \"name\": \"selectionName\",
+            \"type\": \"other\",
+            \"value\": \"DEFAULT_TEST\"
+        },
+        {
+            \"name\": \"SemanticTypesArray\",
+            \"type\": \"other\",
+            \"value\": [{
+                \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Study_Course\",
+                \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Study_Course1\",
+                \"isPrimary\": true,
+                \"isProvenance\": false,
+                \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Title\",
+                \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Study_Course/Study_Course1 (add)\"
+            }]
+        },
+        {
+            \"name\": \"trainAndShowUpdates\",
+            \"type\": \"other\",
+            \"value\": true
+        },
+        {
+            \"name\": \"rdfLiteralType\",
+            \"type\": \"other\",
+            \"value\": \"\"
+        },
+        {
+            \"name\": \"language\",
+            \"type\": \"other\",
+            \"value\": \"\"
+        },
+        {
+            \"name\": \"inputColumns\",
+            \"type\": \"hNodeIdList\",
+            \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"descrizione\\\"}]}]\"
+        },
+        {
+            \"name\": \"outputColumns\",
+            \"type\": \"hNodeIdList\",
+            \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"descrizione\\\"}]}]\"
+        }
+    ],
+    \"tags\": [\"SemanticType\"]
+}]""" .
+
+km-dev:TriplesMap_a5499d43-d382-4620-97cc-ce61b2ebbb5b a rr:TriplesMap .
+
+_:node1gje84ii6x1 km-dev:hasTriplesMap km-dev:TriplesMap_a5499d43-d382-4620-97cc-ce61b2ebbb5b .
+
+km-dev:TriplesMap_a5499d43-d382-4620-97cc-ce61b2ebbb5b km-dev:isPartOfMapping _:node1gje84ii6x1 .
+
+_:node1gje84ii6x2 rr:tableName "courses_offered_in_trentino_school.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1gje84ii6x1 .
+
+_:node1gje84ii6x1 km-dev:hasLogicalTable _:node1gje84ii6x2 .
+
+km-dev:TriplesMap_a5499d43-d382-4620-97cc-ce61b2ebbb5b rr:logicalTable _:node1gje84ii6x2 ;
+	rr:subjectMap _:node1gje84ii6x3 .
+
+_:node1gje84ii6x1 km-dev:hasSubjectMap _:node1gje84ii6x3 .
+
+_:node1gje84ii6x3 km-dev:isPartOfMapping _:node1gje84ii6x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#Study_Course1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#Study_Course> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Study_Course1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_74115fde-55e1-415b-b155-78c002b91952 rr:predicate <http://knowdive.disi.unitn.it/etype#has_Title> .
+
+_:node1gje84ii6x4 rr:column "descrizione" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gje84ii6x1 .
+
+_:node1gje84ii6x1 km-dev:hasObjectMap _:node1gje84ii6x4 .
+
+km-dev:PredicateObjectMap_74115fde-55e1-415b-b155-78c002b91952 rr:objectMap _:node1gje84ii6x4 .
+
+km-dev:TriplesMap_a5499d43-d382-4620-97cc-ce61b2ebbb5b rr:predicateObjectMap km-dev:PredicateObjectMap_74115fde-55e1-415b-b155-78c002b91952 .
+
+km-dev:PredicateObjectMap_74115fde-55e1-415b-b155-78c002b91952 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gje84ii6x1 .
+
+_:node1gje84ii6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_74115fde-55e1-415b-b155-78c002b91952 .

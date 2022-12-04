@@ -1,0 +1,645 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1gjc7hn6jx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "institute_scrutini.csv" ;
+	km-dev:modelPublicationTime "1670079110355"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"percentuale_ammessi\"}],[{\"columnName\":\"anno\"}],[{\"columnName\":\"num_anni\"}],[{\"columnName\":\"tipo_orario\"}],[{\"columnName\":\"ord_scol\"}],[{\"columnName\":\"miur_code\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"percentuale_ammessi\"}],[{\"columnName\":\"anno\"}],[{\"columnName\":\"num_anni\"}],[{\"columnName\":\"tipo_orario\"}],[{\"columnName\":\"ord_scol\"}],[{\"columnName\":\"miur_code\"}]]" ;
+	km-dev:hasModelLabel "institute_scrutini.csv" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ord_scol\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#School\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#School1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Stage\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#School/School1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ord_scol\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ord_scol\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"tipo_orario\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#School\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#School1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Timetable_Type\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#School/School1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"tipo_orario\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"tipo_orario\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"num_anni\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#School\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#School1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Number_of_Years\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#School/School1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"num_anni\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"num_anni\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"percentuale_ammessi\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#School_Statistics\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#School_Statistics1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Percentage_Admitted_Students\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#School_Statistics/School_Statistics1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"percentuale_ammessi\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"percentuale_ammessi\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"anno\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#School_Statistics\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#School_Statistics1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Year\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#School_Statistics/School_Statistics1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"anno\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"anno\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"miur_code\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Institute\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Institute1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Miur_Code\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Institute/Institute1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"miur_code\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"miur_code\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://knowdive.disi.unitn.it/etype#School1\",
+                    \"edgeId\": \"http://knowdive.disi.unitn.it/etype#has_School\",
+                    \"edgeTargetUri\": \"http://knowdive.disi.unitn.it/etype#School\",
+                    \"edgeSourceId\": \"http://knowdive.disi.unitn.it/etype#Institute1\",
+                    \"edgeSourceUri\": \"http://knowdive.disi.unitn.it/etype#Institute\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://knowdive.disi.unitn.it/etype#School_Statistics1\",
+                    \"edgeId\": \"http://knowdive.disi.unitn.it/etype#has_School_Statistics\",
+                    \"edgeTargetUri\": \"http://knowdive.disi.unitn.it/etype#School_Statistics\",
+                    \"edgeSourceId\": \"http://knowdive.disi.unitn.it/etype#School1\",
+                    \"edgeSourceUri\": \"http://knowdive.disi.unitn.it/etype#School\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_7958b22b-c2bb-434b-99d1-21518d1f389d a rr:TriplesMap .
+
+_:node1gjc7hn6jx1 km-dev:hasTriplesMap km-dev:TriplesMap_7958b22b-c2bb-434b-99d1-21518d1f389d .
+
+km-dev:TriplesMap_7958b22b-c2bb-434b-99d1-21518d1f389d km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx2 rr:tableName "institute_scrutini.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasLogicalTable _:node1gjc7hn6jx2 .
+
+km-dev:TriplesMap_7958b22b-c2bb-434b-99d1-21518d1f389d rr:logicalTable _:node1gjc7hn6jx2 ;
+	rr:subjectMap _:node1gjc7hn6jx3 .
+
+_:node1gjc7hn6jx1 km-dev:hasSubjectMap _:node1gjc7hn6jx3 .
+
+_:node1gjc7hn6jx3 km-dev:isPartOfMapping _:node1gjc7hn6jx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#School_Statistics1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#School_Statistics> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "School_Statistics1" .
+
+km-dev:PredicateObjectMap_dd507d70-fb0f-4ed2-8055-43eaa8d73003 rr:predicate <http://knowdive.disi.unitn.it/etype#has_Percentage_Admitted_Students> .
+
+_:node1gjc7hn6jx4 rr:column "percentuale_ammessi" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasObjectMap _:node1gjc7hn6jx4 .
+
+km-dev:PredicateObjectMap_dd507d70-fb0f-4ed2-8055-43eaa8d73003 rr:objectMap _:node1gjc7hn6jx4 .
+
+km-dev:TriplesMap_7958b22b-c2bb-434b-99d1-21518d1f389d rr:predicateObjectMap km-dev:PredicateObjectMap_dd507d70-fb0f-4ed2-8055-43eaa8d73003 .
+
+km-dev:PredicateObjectMap_dd507d70-fb0f-4ed2-8055-43eaa8d73003 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dd507d70-fb0f-4ed2-8055-43eaa8d73003 .
+
+km-dev:PredicateObjectMap_13c45c09-d583-4ef4-92b9-5850b950eed1 rr:predicate <http://knowdive.disi.unitn.it/etype#has_Year> .
+
+_:node1gjc7hn6jx5 rr:column "anno" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasObjectMap _:node1gjc7hn6jx5 .
+
+km-dev:PredicateObjectMap_13c45c09-d583-4ef4-92b9-5850b950eed1 rr:objectMap _:node1gjc7hn6jx5 .
+
+km-dev:TriplesMap_7958b22b-c2bb-434b-99d1-21518d1f389d rr:predicateObjectMap km-dev:PredicateObjectMap_13c45c09-d583-4ef4-92b9-5850b950eed1 .
+
+km-dev:PredicateObjectMap_13c45c09-d583-4ef4-92b9-5850b950eed1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_13c45c09-d583-4ef4-92b9-5850b950eed1 .
+
+km-dev:TriplesMap_a4c8829a-86ca-4eac-ae4d-3cf24adca3bc a rr:TriplesMap .
+
+_:node1gjc7hn6jx1 km-dev:hasTriplesMap km-dev:TriplesMap_a4c8829a-86ca-4eac-ae4d-3cf24adca3bc .
+
+km-dev:TriplesMap_a4c8829a-86ca-4eac-ae4d-3cf24adca3bc km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx6 rr:tableName "institute_scrutini.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasLogicalTable _:node1gjc7hn6jx6 .
+
+km-dev:TriplesMap_a4c8829a-86ca-4eac-ae4d-3cf24adca3bc rr:logicalTable _:node1gjc7hn6jx6 ;
+	rr:subjectMap _:node1gjc7hn6jx7 .
+
+_:node1gjc7hn6jx1 km-dev:hasSubjectMap _:node1gjc7hn6jx7 .
+
+_:node1gjc7hn6jx7 km-dev:isPartOfMapping _:node1gjc7hn6jx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#School1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#School> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "School1" .
+
+km-dev:PredicateObjectMap_ab5b3fbf-79e2-496b-9428-33ec9e415346 rr:predicate <http://knowdive.disi.unitn.it/etype#has_Number_of_Years> .
+
+_:node1gjc7hn6jx8 rr:column "num_anni" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasObjectMap _:node1gjc7hn6jx8 .
+
+km-dev:PredicateObjectMap_ab5b3fbf-79e2-496b-9428-33ec9e415346 rr:objectMap _:node1gjc7hn6jx8 .
+
+km-dev:TriplesMap_a4c8829a-86ca-4eac-ae4d-3cf24adca3bc rr:predicateObjectMap km-dev:PredicateObjectMap_ab5b3fbf-79e2-496b-9428-33ec9e415346 .
+
+km-dev:PredicateObjectMap_ab5b3fbf-79e2-496b-9428-33ec9e415346 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ab5b3fbf-79e2-496b-9428-33ec9e415346 .
+
+km-dev:PredicateObjectMap_0a07dbbe-1404-4539-8cc9-8cf4e02f339a rr:predicate <http://knowdive.disi.unitn.it/etype#has_Timetable_Type> .
+
+_:node1gjc7hn6jx9 rr:column "tipo_orario" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasObjectMap _:node1gjc7hn6jx9 .
+
+km-dev:PredicateObjectMap_0a07dbbe-1404-4539-8cc9-8cf4e02f339a rr:objectMap _:node1gjc7hn6jx9 .
+
+km-dev:TriplesMap_a4c8829a-86ca-4eac-ae4d-3cf24adca3bc rr:predicateObjectMap km-dev:PredicateObjectMap_0a07dbbe-1404-4539-8cc9-8cf4e02f339a .
+
+km-dev:PredicateObjectMap_0a07dbbe-1404-4539-8cc9-8cf4e02f339a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0a07dbbe-1404-4539-8cc9-8cf4e02f339a .
+
+km-dev:PredicateObjectMap_d7b76e8b-b2e3-443f-b204-9ec4d2cb3ff4 rr:predicate <http://knowdive.disi.unitn.it/etype#has_School_Statistics> .
+
+km-dev:RefObjectMap_68ce9ad5-c6c0-4268-827e-6d95f35fb2e5 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_7958b22b-c2bb-434b-99d1-21518d1f389d ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasObjectMap km-dev:RefObjectMap_68ce9ad5-c6c0-4268-827e-6d95f35fb2e5 .
+
+km-dev:PredicateObjectMap_d7b76e8b-b2e3-443f-b204-9ec4d2cb3ff4 rr:objectMap km-dev:RefObjectMap_68ce9ad5-c6c0-4268-827e-6d95f35fb2e5 .
+
+km-dev:TriplesMap_a4c8829a-86ca-4eac-ae4d-3cf24adca3bc rr:predicateObjectMap km-dev:PredicateObjectMap_d7b76e8b-b2e3-443f-b204-9ec4d2cb3ff4 .
+
+km-dev:PredicateObjectMap_d7b76e8b-b2e3-443f-b204-9ec4d2cb3ff4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d7b76e8b-b2e3-443f-b204-9ec4d2cb3ff4 .
+
+km-dev:PredicateObjectMap_891cd45e-2d2c-468a-8921-270882cf976e rr:predicate <http://knowdive.disi.unitn.it/etype#has_Stage> .
+
+_:node1gjc7hn6jx10 rr:column "ord_scol" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasObjectMap _:node1gjc7hn6jx10 .
+
+km-dev:PredicateObjectMap_891cd45e-2d2c-468a-8921-270882cf976e rr:objectMap _:node1gjc7hn6jx10 .
+
+km-dev:TriplesMap_a4c8829a-86ca-4eac-ae4d-3cf24adca3bc rr:predicateObjectMap km-dev:PredicateObjectMap_891cd45e-2d2c-468a-8921-270882cf976e .
+
+km-dev:PredicateObjectMap_891cd45e-2d2c-468a-8921-270882cf976e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_891cd45e-2d2c-468a-8921-270882cf976e .
+
+km-dev:TriplesMap_4118bae6-0743-4e66-bd62-d0e446175713 a rr:TriplesMap .
+
+_:node1gjc7hn6jx1 km-dev:hasTriplesMap km-dev:TriplesMap_4118bae6-0743-4e66-bd62-d0e446175713 .
+
+km-dev:TriplesMap_4118bae6-0743-4e66-bd62-d0e446175713 km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx11 rr:tableName "institute_scrutini.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasLogicalTable _:node1gjc7hn6jx11 .
+
+km-dev:TriplesMap_4118bae6-0743-4e66-bd62-d0e446175713 rr:logicalTable _:node1gjc7hn6jx11 ;
+	rr:subjectMap _:node1gjc7hn6jx12 .
+
+_:node1gjc7hn6jx1 km-dev:hasSubjectMap _:node1gjc7hn6jx12 .
+
+_:node1gjc7hn6jx12 km-dev:isPartOfMapping _:node1gjc7hn6jx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#Institute1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#Institute> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Institute1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_92ddadf7-3050-4292-88f3-a375736b6858 rr:predicate <http://knowdive.disi.unitn.it/etype#has_Miur_Code> .
+
+_:node1gjc7hn6jx13 rr:column "miur_code" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasObjectMap _:node1gjc7hn6jx13 .
+
+km-dev:PredicateObjectMap_92ddadf7-3050-4292-88f3-a375736b6858 rr:objectMap _:node1gjc7hn6jx13 .
+
+km-dev:TriplesMap_4118bae6-0743-4e66-bd62-d0e446175713 rr:predicateObjectMap km-dev:PredicateObjectMap_92ddadf7-3050-4292-88f3-a375736b6858 .
+
+km-dev:PredicateObjectMap_92ddadf7-3050-4292-88f3-a375736b6858 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_92ddadf7-3050-4292-88f3-a375736b6858 .
+
+km-dev:PredicateObjectMap_2583027f-0b7f-4fbb-a556-c9d01a94f974 rr:predicate <http://knowdive.disi.unitn.it/etype#has_School> .
+
+km-dev:RefObjectMap_220bf41e-0e6e-4b82-ad86-0ef4eb4f02ff a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_a4c8829a-86ca-4eac-ae4d-3cf24adca3bc ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasObjectMap km-dev:RefObjectMap_220bf41e-0e6e-4b82-ad86-0ef4eb4f02ff .
+
+km-dev:PredicateObjectMap_2583027f-0b7f-4fbb-a556-c9d01a94f974 rr:objectMap km-dev:RefObjectMap_220bf41e-0e6e-4b82-ad86-0ef4eb4f02ff .
+
+km-dev:TriplesMap_4118bae6-0743-4e66-bd62-d0e446175713 rr:predicateObjectMap km-dev:PredicateObjectMap_2583027f-0b7f-4fbb-a556-c9d01a94f974 .
+
+km-dev:PredicateObjectMap_2583027f-0b7f-4fbb-a556-c9d01a94f974 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc7hn6jx1 .
+
+_:node1gjc7hn6jx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2583027f-0b7f-4fbb-a556-c9d01a94f974 .

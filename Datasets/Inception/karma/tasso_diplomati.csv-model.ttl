@@ -1,0 +1,194 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1gjc4o3box1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "tasso_diplomati.csv" ;
+	km-dev:modelPublicationTime "1670076173689"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"tasso_2011\"}],[{\"columnName\":\"Ente\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"tasso_2011\"}],[{\"columnName\":\"Ente\"}]]" ;
+	km-dev:hasModelLabel "tasso_diplomati.csv" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Ente\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Name\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division/Subregional_Academic_Division1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Ente\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Ente\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"tasso_2011\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Tasso_Diplomati\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division/Subregional_Academic_Division1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"tasso_2011\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"tasso_2011\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_d55ebd3c-505c-497c-9370-9a771c7d3d35 a rr:TriplesMap .
+
+_:node1gjc4o3box1 km-dev:hasTriplesMap km-dev:TriplesMap_d55ebd3c-505c-497c-9370-9a771c7d3d35 .
+
+km-dev:TriplesMap_d55ebd3c-505c-497c-9370-9a771c7d3d35 km-dev:isPartOfMapping _:node1gjc4o3box1 .
+
+_:node1gjc4o3box2 rr:tableName "tasso_diplomati.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1gjc4o3box1 .
+
+_:node1gjc4o3box1 km-dev:hasLogicalTable _:node1gjc4o3box2 .
+
+km-dev:TriplesMap_d55ebd3c-505c-497c-9370-9a771c7d3d35 rr:logicalTable _:node1gjc4o3box2 ;
+	rr:subjectMap _:node1gjc4o3box3 .
+
+_:node1gjc4o3box1 km-dev:hasSubjectMap _:node1gjc4o3box3 .
+
+_:node1gjc4o3box3 km-dev:isPartOfMapping _:node1gjc4o3box1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Subregional_Academic_Division1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_2ad2f102-dc01-4bd2-aac4-f6b3c91884c2 rr:predicate <http://knowdive.disi.unitn.it/etype#has_Name> .
+
+_:node1gjc4o3box4 rr:column "Ente" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc4o3box1 .
+
+_:node1gjc4o3box1 km-dev:hasObjectMap _:node1gjc4o3box4 .
+
+km-dev:PredicateObjectMap_2ad2f102-dc01-4bd2-aac4-f6b3c91884c2 rr:objectMap _:node1gjc4o3box4 .
+
+km-dev:TriplesMap_d55ebd3c-505c-497c-9370-9a771c7d3d35 rr:predicateObjectMap km-dev:PredicateObjectMap_2ad2f102-dc01-4bd2-aac4-f6b3c91884c2 .
+
+km-dev:PredicateObjectMap_2ad2f102-dc01-4bd2-aac4-f6b3c91884c2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc4o3box1 .
+
+_:node1gjc4o3box1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2ad2f102-dc01-4bd2-aac4-f6b3c91884c2 .
+
+km-dev:PredicateObjectMap_0081d328-39bc-46da-8710-4dc72fdad41a rr:predicate <http://knowdive.disi.unitn.it/etype#has_Tasso_Diplomati> .
+
+_:node1gjc4o3box5 rr:column "tasso_2011" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc4o3box1 .
+
+_:node1gjc4o3box1 km-dev:hasObjectMap _:node1gjc4o3box5 .
+
+km-dev:PredicateObjectMap_0081d328-39bc-46da-8710-4dc72fdad41a rr:objectMap _:node1gjc4o3box5 .
+
+km-dev:TriplesMap_d55ebd3c-505c-497c-9370-9a771c7d3d35 rr:predicateObjectMap km-dev:PredicateObjectMap_0081d328-39bc-46da-8710-4dc72fdad41a .
+
+km-dev:PredicateObjectMap_0081d328-39bc-46da-8710-4dc72fdad41a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc4o3box1 .
+
+_:node1gjc4o3box1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0081d328-39bc-46da-8710-4dc72fdad41a .

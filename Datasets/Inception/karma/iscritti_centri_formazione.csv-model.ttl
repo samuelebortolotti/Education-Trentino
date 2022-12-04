@@ -1,0 +1,194 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1gjc6j2krx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "iscritti_centri_formazione.csv" ;
+	km-dev:modelPublicationTime "1670078106267"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Iscritti ai centri di formazione professionale\"}],[{\"columnName\":\"Column_2\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Iscritti ai centri di formazione professionale\"}],[{\"columnName\":\"Column_2\"}]]" ;
+	km-dev:hasModelLabel "iscritti_centri_formazione.csv" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Iscritti ai centri di formazione professionale\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Name\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division/Subregional_Academic_Division1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Iscritti ai centri di formazione professionale\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Iscritti ai centri di formazione professionale\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Column_2\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Number_Students_Enrolled_in_CF\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division/Subregional_Academic_Division1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Column_2\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Column_2\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_9434aaf6-1330-4d39-901d-305b6e672611 a rr:TriplesMap .
+
+_:node1gjc6j2krx1 km-dev:hasTriplesMap km-dev:TriplesMap_9434aaf6-1330-4d39-901d-305b6e672611 .
+
+km-dev:TriplesMap_9434aaf6-1330-4d39-901d-305b6e672611 km-dev:isPartOfMapping _:node1gjc6j2krx1 .
+
+_:node1gjc6j2krx2 rr:tableName "iscritti_centri_formazione.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1gjc6j2krx1 .
+
+_:node1gjc6j2krx1 km-dev:hasLogicalTable _:node1gjc6j2krx2 .
+
+km-dev:TriplesMap_9434aaf6-1330-4d39-901d-305b6e672611 rr:logicalTable _:node1gjc6j2krx2 ;
+	rr:subjectMap _:node1gjc6j2krx3 .
+
+_:node1gjc6j2krx1 km-dev:hasSubjectMap _:node1gjc6j2krx3 .
+
+_:node1gjc6j2krx3 km-dev:isPartOfMapping _:node1gjc6j2krx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Subregional_Academic_Division1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_036d5ee2-2204-437a-9ee3-7d0ae559696d rr:predicate <http://knowdive.disi.unitn.it/etype#has_Name> .
+
+_:node1gjc6j2krx4 rr:column "Iscritti ai centri di formazione professionale" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6j2krx1 .
+
+_:node1gjc6j2krx1 km-dev:hasObjectMap _:node1gjc6j2krx4 .
+
+km-dev:PredicateObjectMap_036d5ee2-2204-437a-9ee3-7d0ae559696d rr:objectMap _:node1gjc6j2krx4 .
+
+km-dev:TriplesMap_9434aaf6-1330-4d39-901d-305b6e672611 rr:predicateObjectMap km-dev:PredicateObjectMap_036d5ee2-2204-437a-9ee3-7d0ae559696d .
+
+km-dev:PredicateObjectMap_036d5ee2-2204-437a-9ee3-7d0ae559696d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6j2krx1 .
+
+_:node1gjc6j2krx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_036d5ee2-2204-437a-9ee3-7d0ae559696d .
+
+km-dev:PredicateObjectMap_a08fa9a1-835d-4b26-a72f-dce4151b0222 rr:predicate <http://knowdive.disi.unitn.it/etype#has_Number_Students_Enrolled_in_CF> .
+
+_:node1gjc6j2krx5 rr:column "Column_2" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6j2krx1 .
+
+_:node1gjc6j2krx1 km-dev:hasObjectMap _:node1gjc6j2krx5 .
+
+km-dev:PredicateObjectMap_a08fa9a1-835d-4b26-a72f-dce4151b0222 rr:objectMap _:node1gjc6j2krx5 .
+
+km-dev:TriplesMap_9434aaf6-1330-4d39-901d-305b6e672611 rr:predicateObjectMap km-dev:PredicateObjectMap_a08fa9a1-835d-4b26-a72f-dce4151b0222 .
+
+km-dev:PredicateObjectMap_a08fa9a1-835d-4b26-a72f-dce4151b0222 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6j2krx1 .
+
+_:node1gjc6j2krx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a08fa9a1-835d-4b26-a72f-dce4151b0222 .

@@ -1,0 +1,194 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1gjc48shmx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "unitn-courses.csv" ;
+	km-dev:modelPublicationTime "1670075675190"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"course_name\"}],[{\"columnName\":\"degree_program\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"course_name\"}],[{\"columnName\":\"degree_program\"}]]" ;
+	km-dev:hasModelLabel "unitn-courses.csv" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"course_name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Study_Course\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Study_Course1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Articulation\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Study_Course/Study_Course1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"course_name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"course_name\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"degree_program\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Study_Course\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Study_Course1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Title\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Study_Course/Study_Course1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"degree_program\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"degree_program\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_8f607f66-9235-44fd-8a35-c96d4c65905d a rr:TriplesMap .
+
+_:node1gjc48shmx1 km-dev:hasTriplesMap km-dev:TriplesMap_8f607f66-9235-44fd-8a35-c96d4c65905d .
+
+km-dev:TriplesMap_8f607f66-9235-44fd-8a35-c96d4c65905d km-dev:isPartOfMapping _:node1gjc48shmx1 .
+
+_:node1gjc48shmx2 rr:tableName "unitn-courses.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1gjc48shmx1 .
+
+_:node1gjc48shmx1 km-dev:hasLogicalTable _:node1gjc48shmx2 .
+
+km-dev:TriplesMap_8f607f66-9235-44fd-8a35-c96d4c65905d rr:logicalTable _:node1gjc48shmx2 ;
+	rr:subjectMap _:node1gjc48shmx3 .
+
+_:node1gjc48shmx1 km-dev:hasSubjectMap _:node1gjc48shmx3 .
+
+_:node1gjc48shmx3 km-dev:isPartOfMapping _:node1gjc48shmx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#Study_Course1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#Study_Course> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Study_Course1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_21639c12-1e46-4806-937d-c0c47af4f21e rr:predicate <http://knowdive.disi.unitn.it/etype#has_Articulation> .
+
+_:node1gjc48shmx4 rr:column "course_name" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc48shmx1 .
+
+_:node1gjc48shmx1 km-dev:hasObjectMap _:node1gjc48shmx4 .
+
+km-dev:PredicateObjectMap_21639c12-1e46-4806-937d-c0c47af4f21e rr:objectMap _:node1gjc48shmx4 .
+
+km-dev:TriplesMap_8f607f66-9235-44fd-8a35-c96d4c65905d rr:predicateObjectMap km-dev:PredicateObjectMap_21639c12-1e46-4806-937d-c0c47af4f21e .
+
+km-dev:PredicateObjectMap_21639c12-1e46-4806-937d-c0c47af4f21e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc48shmx1 .
+
+_:node1gjc48shmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_21639c12-1e46-4806-937d-c0c47af4f21e .
+
+km-dev:PredicateObjectMap_dfc4ab6d-cd85-47b9-b26a-f7999b8203d1 rr:predicate <http://knowdive.disi.unitn.it/etype#has_Title> .
+
+_:node1gjc48shmx5 rr:column "degree_program" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc48shmx1 .
+
+_:node1gjc48shmx1 km-dev:hasObjectMap _:node1gjc48shmx5 .
+
+km-dev:PredicateObjectMap_dfc4ab6d-cd85-47b9-b26a-f7999b8203d1 rr:objectMap _:node1gjc48shmx5 .
+
+km-dev:TriplesMap_8f607f66-9235-44fd-8a35-c96d4c65905d rr:predicateObjectMap km-dev:PredicateObjectMap_dfc4ab6d-cd85-47b9-b26a-f7999b8203d1 .
+
+km-dev:PredicateObjectMap_dfc4ab6d-cd85-47b9-b26a-f7999b8203d1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc48shmx1 .
+
+_:node1gjc48shmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dfc4ab6d-cd85-47b9-b26a-f7999b8203d1 .

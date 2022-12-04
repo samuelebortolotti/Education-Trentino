@@ -1,0 +1,193 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1gjc6d435x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "iscritti_scuole_medie.csv_" ;
+	km-dev:modelPublicationTime "1670077911141"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Anno\"}],[{\"columnName\":\"2021\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Anno\"}],[{\"columnName\":\"2021\"}]]" ;
+	km-dev:hasModelLabel "iscritti_scuole_medie.csv_" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Anno\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Name\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division/Subregional_Academic_Division1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Anno\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Anno\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"2021\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division\",
+                    \"DomainId\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://knowdive.disi.unitn.it/etype#has_Number_Students_Enrolled_in_Middle_School\",
+                    \"DomainLabel\": \"http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division/Subregional_Academic_Division1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"2021\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"2021\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_515271f5-4500-4e31-a5c3-0d14e977893f a rr:TriplesMap .
+
+_:node1gjc6d435x1 km-dev:hasTriplesMap km-dev:TriplesMap_515271f5-4500-4e31-a5c3-0d14e977893f .
+
+km-dev:TriplesMap_515271f5-4500-4e31-a5c3-0d14e977893f km-dev:isPartOfMapping _:node1gjc6d435x1 .
+
+_:node1gjc6d435x2 rr:tableName "iscritti_scuole_medie.csv_" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1gjc6d435x1 .
+
+_:node1gjc6d435x1 km-dev:hasLogicalTable _:node1gjc6d435x2 .
+
+km-dev:TriplesMap_515271f5-4500-4e31-a5c3-0d14e977893f rr:logicalTable _:node1gjc6d435x2 ;
+	rr:subjectMap _:node1gjc6d435x3 .
+
+_:node1gjc6d435x1 km-dev:hasSubjectMap _:node1gjc6d435x3 .
+
+_:node1gjc6d435x3 km-dev:isPartOfMapping _:node1gjc6d435x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division1" ;
+	rr:class <http://knowdive.disi.unitn.it/etype#Subregional_Academic_Division> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "Subregional_Academic_Division1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_ce9af7d5-760c-43d6-b5c1-0726bfd230ea rr:predicate <http://knowdive.disi.unitn.it/etype#has_Number_Students_Enrolled_in_Middle_School> .
+
+_:node1gjc6d435x4 rr:column "2021" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6d435x1 .
+
+_:node1gjc6d435x1 km-dev:hasObjectMap _:node1gjc6d435x4 .
+
+km-dev:PredicateObjectMap_ce9af7d5-760c-43d6-b5c1-0726bfd230ea rr:objectMap _:node1gjc6d435x4 .
+
+km-dev:TriplesMap_515271f5-4500-4e31-a5c3-0d14e977893f rr:predicateObjectMap km-dev:PredicateObjectMap_ce9af7d5-760c-43d6-b5c1-0726bfd230ea .
+
+km-dev:PredicateObjectMap_ce9af7d5-760c-43d6-b5c1-0726bfd230ea a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6d435x1 .
+
+_:node1gjc6d435x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ce9af7d5-760c-43d6-b5c1-0726bfd230ea .
+
+km-dev:PredicateObjectMap_107c7e0f-c531-457d-8005-1f0dccd872c4 rr:predicate <http://knowdive.disi.unitn.it/etype#has_Name> .
+
+_:node1gjc6d435x5 rr:column "Anno" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6d435x1 .
+
+_:node1gjc6d435x1 km-dev:hasObjectMap _:node1gjc6d435x5 .
+
+km-dev:PredicateObjectMap_107c7e0f-c531-457d-8005-1f0dccd872c4 rr:objectMap _:node1gjc6d435x5 .
+
+km-dev:TriplesMap_515271f5-4500-4e31-a5c3-0d14e977893f rr:predicateObjectMap km-dev:PredicateObjectMap_107c7e0f-c531-457d-8005-1f0dccd872c4 .
+
+km-dev:PredicateObjectMap_107c7e0f-c531-457d-8005-1f0dccd872c4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1gjc6d435x1 .
+
+_:node1gjc6d435x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_107c7e0f-c531-457d-8005-1f0dccd872c4 .
