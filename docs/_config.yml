@@ -1,1 +1,3 @@
 remote_theme: neizod/polar
+plugins:
+  - jekyll-remote-theme
