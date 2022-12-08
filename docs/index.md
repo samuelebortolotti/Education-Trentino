@@ -1,5 +1,5 @@
 # Education in Trentino
-This project was developed by Samuele Bortolotti and Erich Robbi for for the Knowledge Graph Engineering course of the master's degree in Computer Science at University of Trento.
+This project was developed by Samuele Bortolotti and Erich Robbi for the Knowledge Graph Engineering course of the master's degree in Computer Science at University of Trento.
 
 ## Project Description
 
@@ -26,3 +26,4 @@ This project was developed by Samuele Bortolotti and Erich Robbi for for the Kno
 ### Project Report
 
 ### Project Presentation Presentation
+

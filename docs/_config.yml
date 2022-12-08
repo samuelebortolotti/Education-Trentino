@@ -1,3 +1,5 @@
-remote_theme: neizod/polar
-plugins:
-  - jekyll-remote-theme
+title: Education in Trentino
+email: samuele.bortolotti@studenti.unitn.it
+description: >- # this means to ignore newlines until "baseurl:"
+  This project was developed by Samuele Bortolotti and Erich Robbi for the Knowledge Graph Engineering course of the master's degree in Computer Science at University of Trento.
+theme: minima
