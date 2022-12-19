@@ -1,4 +1,4 @@
-This project was developed by Samuele Bortolotti and Erich Robbi for the Knowledge Graph Engineering course of the master's degree in Computer Science at University of Trento.
+This project was developed by Samuele Bortolotti and Erich Robbi for the *Knowledge Graph Engineering* course of the master's degree in Computer Science at University of Trento.
 
 # Project Description
 Reusability is one of the main principles in the Knowledge Graph Engineering (KGE) process
@@ -16,13 +16,13 @@ Indeed, among the resources, we can identify three categories, which are strictl
 - **Core resources** do not convey knowledge on the most crucial aspects related to the purpose; however, without this knowledge, the service cannot be delivered.
 - **Contextual resources** include particular, sometimes exclusive data pertaining to the purpose and for this reason, they are the less reusable ones.
 
-iTelos is a general-purpose methodology that aims at providing a possible solution to the resources re-usability problem by developing independently the data level and the schema level of the resources. To fulfill its objective, iTelos uses ontologies, in order to set a standard schema for the whole application, and Knowledge Graphs, a graph-structured data model to integrate data.
+*iTelos* is a general-purpose methodology that aims at providing a possible solution to the resources re-usability problem by developing independently the data level and the schema level of the resources. To fulfill its objective, *iTelos* uses ontologies, in order to set a standard schema for the whole application, and Knowledge Graphs, a graph-structured data model to integrate data.
 
 To support our work in re-usability, we have relied on the [FAIR](The FAIR Guiding Principles for scientific data management and stewardship) guiding principles. FAIR aim to make data Findable, metadata, and data should be easy to find for both humans and computers; Accessible, once the data is found the user has to know how to access it; Interoperable, the data need to interoperate with applications or workflows for analysis, storage, and processing; and finally Reusable, optimize the data re-use thought well-described metadata and data in order to be replicated and/or combined in different settings. 
 
 The goal of this work is to provide a service that will make it easier to locate schools in the Trentino area, together with information about those schools and the courses they offer, based on criteria such as city, commune, school type, course length, and instructional activity schedules.
 
-# Purpouse
+# Purpose
 The initial, and thus informal, purpose which has been later formalized, is shown below:
 
 <div align="center">
@@ -56,7 +56,7 @@ education statistics”
 
 # Datasets
 This section comprehends the list of resources we have employed in order to build the final knowledge graph.
-Keep in mind that all the resources were managed thoughout the entire process in order to be aligned syntatically and semantically, hence, the cleaned datasets can be found in the GitHub repository.
+Keep in mind that all the resources were managed throughout the entire process in order to be aligned syntactically and semantically, hence, the cleaned datasets can be found in the GitHub repository.
 
 | Data Source                                                                                                                    	| Format 	| Organization      	| Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                 	| License                                                             	|
 |--------------------------------------------------------------------------------------------------------------------------------	|--------	|-------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------	|
@@ -75,13 +75,161 @@ Keep in mind that all the resources were managed thoughout the entire process in
 | [Unitrento Digital University](https://webapps.unitn.it/du)                                                                    	| JSON   	| Unitn             	| Information on the students, faculty, staff, and administration of the University of Trento can be found at the Digital University portal.                                                                                                                                                                                                                                                                                                                                  	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
 | [Vivo Scuola](https://www.vivoscuola.it)                                                                                       	| HTML   	| Vivoscuola        	| Vivoscuola provides an integrated variety of services, information, and curiosity about schools to students, teachers, and parents                                                                                                                                                                                                                                                                                                                                          	| [CC Attribution v3.0](https://creativecommons.org/licenses/by/3.0/) 	| 
 
+# Inception
+
+The formalization of the project's objective and the domain is the first and most crucial step in the data integration process and the inception phase. The clarity of the project objective is a key factor in determining how the data integration process turns out.
+
+In order to formulate a purpose, one must first define the project's domain of interest, personas, and scenarios involving those personas.
+
+We have identified the domain of interest, and built 11 distinct personas and 10 various scenarios with a variety of features, with the subsequent definition of the competency questions.
+
+All the personas, scenarios and competency questions are present within the project report and project repository. In the remaining part of this section, we show an example of persona, scenario and competency question.
+
+| Persona | Personal Information | Differentiator |
+|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| ![Persona](assets/hermann.jpg)              | Age: 55 <br>Sex: Male<br>Occupation: worker<br>Driver: yes<br>Education: PhD         | Hermann is a 55-year-old man from Austria and he works as a senior researcher at Stanford University, United States. His research area is mostly focused on the importance of education and how to improve it during each stage of life. His latest work is carried out in collaboration with the European Schoolnet, which is an organization headquartered in Brussels, with the aim of innovating both education and learning in Europe. Therefore, as the first step for his work he has to collect basic information in regard of the educational activities that take place in all Europe, Trentino included. More specifically, he has to retrieve all details of the schools such as the school name, the country municipality, the courses that the school offers, and a reference contact in case of additional question  |
+
+
+| Scenario | Description |
+|--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| ![Scenario](assets/work_and_study.jpg) | I am a student and I am looking for a school that would allow me not to quit my job. I am currently employed part-time and I cannot afford to quit my job to attend school full-time. I am looking for a school that has an online or evening program that would allow me to continue working while attending school. |
+
+|  Persona ID    |  Scenario ID   | Competency Question | Common Entities | Core Entities | Contextual Entities |
+| :------: | :--------: | :----: | --------: | --------: | --------: |
+| 6  | 6 | Give me the top rated kindergartens near Pergine Valsugana | Education Institute, School | Subregional Academic Division | Education quality, Review |
+
+Finally, in this phase we have collected the first informal resources needed in order to build the final knowledge graph. All the resources can be found within the project repository.
+
 # Informal modeling
+
+The informal modeling step of *iTelos* is a crucial linking stage that allows us to create the fundamental *Etypes* and draws conclusions about their related attributes from competency questions.
+
+The ER model is built using the retrieved *Etypes* and characteristics. There are two sections of the entire operation: the first one relates to the knowledge layer, while the other is concerned with the data layer. The knowledge layer’s critical step in this phase is intended to transform analyzed competency questions into classes and attributes.
+
+The definition of the Competency Questions allowed us to define the following Entities:
+
+- School
+- School Statistics
+- Region
+- Institute
+- Institute Contact Information
+- Subregional Academic Division
+- Responsible Authority
+- Invalsi Score
+- Study Course
+- Contact Information
+- Review
+- Education Quality
+- Professor
+
+## ER Model
+
+![ER Model](assets/TeleologyER.png)
+
+There are 13 classes (*Etypes*):
+
+### Common Etypes
+
+- Region
+- School
+- Contact Information
+- Institute
+
+### Core Etypes
+
+- Professor
+- Responsible Authority
+- Subregional Academic Division
+- Institute Contact Information
+  
+### Contextual Etype
+
+- Review
+- School Statistics
+- Invalsi Score
+- Study Course
+- Education Quality
 
 # Formal modeling
 
+The third *iTelos* phase is Formal Modeling. In this phase, we are asked to build the ETG model
+and to syntactically align the datasets for knowledge and data level using the ER model, the
+selected datasets, and reference ontologies.
+
+The goal of ontology selection is to identify relevant ontologies for reference, which represent
+use-case scenarios that may be reused to model the ER.
+To be more explicit, the initial stage in the ETG generation activity is to reuse ontology from
+well-known knowledge resources that are semantically equivalent to concepts that are present in
+the ER model defined in the previous phase. The most important element is to determine which
+concepts such as objects, functions, and actions from existing ontologies may be connected
+and aligned to the ER model. We have opted for [`VIVO`](http://liveschema.eu/dataset/graph/lov_vivo) as reference ontology with some Etypes borrowed from [`schema.org`](https://schema.org/).
+
+## Teleontology
+
+![Teleontology](assets/teleontology_final.png)
+
 # ETG construction
 
-# Aswer to the competency questions
+The crucial phase in ETG construction is Entity matching, which is the last phase of the *iTelos* methodology. The aim is to determine whether several entities in the datasets can reflect the same real-world entity and, as a result, should be integrated into the final EG.
+
+The key point of entity matching is to define each entity Identifying Set. An Identifying Set is a set of Etypes properties that uniquely identify an entity throughout the different datasets. The idea is that identifiers are not always included in datasets, thus, we should find those properties which allow us to uniquely identify an entity.
+
+This procedure was conducted on *KarmaLinker*, which is a tool compliant with the *iTelos* methodology used for data integration. We can effectively match the datasets to the specified ontology using *KarmaLinker*. Hence, by defining each *Etype* URIs we completely address the semantic heterogeneity problem.
+
+Once the mapping has been performed, *KarmaLinker* produces the RDF file for each EType, which can then be used in order to load data in *GraphDB*.
+
+# Answer to the competency questions
+
+The objective of this project is to integrate data and knowledge related to Trentino educational facilities into a knowledge graph so that users can use it to get the answers to their queries.
+In compliance with the final objective, we used *SPARQL* via *GraphDB* to see whether our model can be applied to real-world scenarios. As evidenced by the outcomes of certain deployed instances, our model answers the queries in a satisfactory way. 
+
+## Outcome exploitation
+
+Here we provide a few examples regarding the *SPARQL* queries used to answer some of the competency questions:
+
+### Give me the top-rated kindergartens in Trentino
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ds: <http://knowdive.disi.unitn.it/etype#>
+select ?school_name ?municipality_name ?score where {
+    ?municipality rdf:type ds:Subregional_Academic_Division_GID-300037  .
+    ?institute rdf:type ds:Institute_GID-45425 .
+        ?school rdf:type ds:School_GID-44778 .
+    ?quality rdf:type ds:Education_Quality_GID-300039 .
+
+    ?municipality ds:contains_GID-113311_Type-300037 ?institute .
+    ?institute ds:includes_GID-101226_Type-45425 ?school .
+    ?school ds:has_metric_GID-300001_Type-44778 ?quality .
+    
+    ?municipality ds:has_Name_GID-2_Type-300037 ?municipality_name .
+    ?institute ds:has_Type_GID-31834 ?type .
+    ?school ds:has_Name_GID-2_Type-300037 ?school_name .
+    ?quality ds:has_User_Score_GID-31336_Type-300039 ?score .
+    FILTER(?type = "Kindergarten")
+} order by desc(?score) LIMIT 10	
+```
+
+### Give me % of student that abandoned a particular institute
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ds: <http://knowdive.disi.unitn.it/etype#>
+select ?institute_name ?year ?dropout_number_of_students ?dropout_percentage where {
+    ?institute rdf:type ds:Institute_GID-45425 .
+    ?school rdf:type ds:School_GID-44778 .
+    ?statistics rdf:type ds:School_Statistics_GID-300043 .
+    
+    ?institute ds:includes_GID-101226_Type-45425 ?school .
+    ?school ds:produces_GID-108406_Type-44778 ?statistics.
+
+    ?institute ds:has_Name_GID-2_Type-300037 ?institute_name .
+    ?school ds:has_Name_GID-2_Type-300037 ?school_name .
+    ?statistics ds:has_Year_GID-80974_Type-300043 ?year .
+    ?statistics ds:has_Dropout_Students_GID-300013_Type-300043 ?dropout_number_of_students .
+    ?statistics ds:has_Dropout_Percentage_GID-300015_Type-300043 ?dropout_percentage .
+} order by ?year desc(?dropout_percentage)
+```
 
 # Resources
 In this section, we present the list of resources which can be consulted in order to know more about the project.
@@ -96,11 +244,12 @@ Here you can find the contact information in order to get in touch with us:
 
 
 ## GitHub repository
-All the materials, concerning the Personas, Competency Questions, Ontologies, Teleology, Teleontology, KG and GraphQL queries Teleontology, KG and GraphQL queries are listed below:
+All the materials, concerning the Personas, Competency Questions, Ontologies, Teleology, Teleontology, KG and *SPARQL* queries are listed below:
 
 ## Google Drive folder
+
+Link: [Google Drive Folder](https://drive.google.com/drive/folders/1X7iKpIhawEzTfQhQWdEJWfbMpVyZ6xl_?usp=share_link)
 
 ## Project Report
 
 ## Project Presentation
-
