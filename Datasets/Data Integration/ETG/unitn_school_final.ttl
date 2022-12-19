@@ -1,0 +1,14 @@
+<http://localhost:8080/source/school_id_0000000000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<http://localhost:8080/source/school_id_0000000000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/school_id_0000000000000> <http://knowdive.disi.unitn.it/etype#has_Address_GID-45803> "Via Calepina, 14" .
+<http://localhost:8080/source/Università%20degli%20studi%20di%20Trento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://localhost:8080/source/Università%20degli%20studi%20di%20Trento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Institute_GID-45425> .
+<http://localhost:8080/source/school_id_0000000000000> <http://knowdive.disi.unitn.it/etype#has_Stage_GID-300023_Type-44778> "University" .
+<http://localhost:8080/source/Università%20degli%20studi%20di%20Trento> <http://knowdive.disi.unitn.it/etype#includes_GID-101226_Type-45425> <http://localhost:8080/source/school_id_0000000000000> .
+<http://localhost:8080/source/Università%20degli%20studi%20di%20Trento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<http://localhost:8080/source/school_id_0000000000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#School_GID-44778> .
+<http://localhost:8080/source/school_id_0000000000000> <http://knowdive.disi.unitn.it/etype#has_Type_GID-31834> "University" .
+<http://localhost:8080/source/school_id_0000000000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://localhost:8080/source/school_id_0000000000000> <http://knowdive.disi.unitn.it/etype#has_Name_GID-2_Type-300037> "Università degli studi di Trento" .
+<http://localhost:8080/source/Università%20degli%20studi%20di%20Trento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+
