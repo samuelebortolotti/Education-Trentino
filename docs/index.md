@@ -95,7 +95,7 @@ All the personas, scenarios and competency questions are present within the proj
 | ![Scenario](assets/work_and_study.jpg) | I am a student and I am looking for a school that would allow me not to quit my job. I am currently employed part-time and I cannot afford to quit my job to attend school full-time. I am looking for a school that has an online or evening program that would allow me to continue working while attending school. |
 
 |  Persona ID    |  Scenario ID   | Competency Question | Common Entities | Core Entities | Contextual Entities |
-| :------: | :--------: | :----: | --------: | --------: | --------: |
+| ------ | -------- | ---- | -------- | -------- | -------- |
 | 6  | 6 | Give me the top rated kindergartens near Pergine Valsugana | Education Institute, School | Subregional Academic Division | Education quality, Review |
 
 Finally, in this phase we have collected the first informal resources needed in order to build the final knowledge graph. All the resources can be found within the project repository.
