@@ -1,4 +1,4 @@
-This project was developed by Samuele Bortolotti and Erich Robbi for the *Knowledge Graph Engineering* course of the master's degree in Computer Science at University of Trento.
+This project was developed by Samuele Bortolotti and Erich Robbi for the *Knowledge Graph Engineering* course of the master's degree in Computer Science at the University of Trento.
 
 # Project Description
 Reusability is one of the main principles in the Knowledge Graph Engineering (KGE) process
@@ -14,11 +14,11 @@ Indeed, among the resources, we can identify three categories, which are strictl
 
 - **Common resources** are not directly relevant to the user’s purpose but are fundamental to support it since they include knowledge that is shared across several domains of interest.
 - **Core resources** do not convey knowledge on the most crucial aspects related to the purpose; however, without this knowledge, the service cannot be delivered.
-- **Contextual resources** include particular, sometimes exclusive data pertaining to the purpose and for this reason, they are the less reusable ones.
+- **Contextual resources** include particular, sometimes exclusive data pertaining to the purpose, and for this reason, they are the less reusable ones.
 
-*iTelos* is a general-purpose methodology that aims at providing a possible solution to the resources re-usability problem by developing independently the data level and the schema level of the resources. To fulfill its objective, *iTelos* uses ontologies, in order to set a standard schema for the whole application, and Knowledge Graphs, a graph-structured data model to integrate data.
+*iTelos* is a general-purpose methodology that aims at providing a possible solution to the resource re-usability problem by developing independently the data level and the schema level of the resources. To fulfill its objective, *iTelos* uses ontologies, to set a standard schema for the whole application, and Knowledge Graphs, a graph-structured data model to integrate data.
 
-To support our work in re-usability, we have relied on the [FAIR](The FAIR Guiding Principles for scientific data management and stewardship) guiding principles. FAIR aim to make data Findable, metadata, and data should be easy to find for both humans and computers; Accessible, once the data is found the user has to know how to access it; Interoperable, the data need to interoperate with applications or workflows for analysis, storage, and processing; and finally Reusable, optimize the data re-use thought well-described metadata and data in order to be replicated and/or combined in different settings. 
+To support our work in re-usability, we have relied on the [FAIR](The FAIR Guiding Principles for scientific data management and stewardship) guiding principles. FAIR aim to make data Findable, metadata, and data should be easy to find for both humans and computers; Accessible, once the data is found the user has to know how to access it; Interoperable, the data needs to interoperate with applications or workflows for analysis, storage, and processing; and finally Reusable, optimize the data re-use thought well-described metadata and data to be replicated and/or combined in different settings. 
 
 The goal of this work is to provide a service that will make it easier to locate schools in the Trentino area, together with information about those schools and the courses they offer, based on criteria such as city, commune, school type, course length, and instructional activity schedules.
 
@@ -43,7 +43,7 @@ Moreover, the data we were able to gather spans the years 2014 through 2022.
 
 However, we have sufficient recent data to assert that our temporal domain refers to the last few years (2020 - 2022).
 
-Furthermore, a crucial feature we want our system to provide is to define metrics in order to assess the quality of the education provided by an educational facility, such as the quality of the reviews, the rate of completion of compulsory schooling, the number of students who fail to pass the year per municipality.
+Furthermore, a crucial feature we want our system to provide is to define metrics to assess the quality of the education provided by an educational facility, such as the quality of the reviews, the rate of completion of compulsory schooling, the number of students who fail to pass the year per municipality.
 
 As a result, after learning about the type of data that was already accessible, the project’s original goal was established as follows:
 
@@ -61,13 +61,13 @@ Keep in mind that all the resources were managed throughout the entire process i
 | Data Source                                                                                                                    	| Format 	| Organization      	| Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                 	| License                                                             	|
 |--------------------------------------------------------------------------------------------------------------------------------	|--------	|-------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------	|
 | [Municipalities of Trentino](https://en.wikipedia.org/wiki/Municipalities_of_Trentino)                                         	| HTML   	| Wikipedia         	| This resource represents a list of municipalities of the autonomous province of Trento, Italy. In particular, it shows the [ISTAT code](https://en.wikipedia.org/wiki/Italian_National_Institute_of_Statistics), the name, the area, and the estimated population in 2001.                                                                                                                                                                                                  	| [CC Attribution v3.0](https://creativecommons.org/licenses/by/3.0/) 	|
-| [Nidi di Infanzia](ttps://dati.trentino.it/dataset/nidi-dinfanzia2)                                                            	| CSV    	| OpenData Trentino 	| This resources contains the number of facilities of Nursery Schools which are present in each municipality of the autonomous province of Trento.                                                                                                                                                                                                                                                                                                                            	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
-| [Scuole d'Infanzia](https://dati.trentino.it/dataset/scuole-dinfanzia2)                                                        	| CSV    	| OpenData Trentino 	| This resources contains the number of facilities of Kindergartens which are present in each municipality of the autonomous province of Trento.                                                                                                                                                                                                                                                                                                                              	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
-| [Scuole Elementari](https://dati.trentino.it/dataset/scuole-elementari2)                                                       	| CSV    	| OpenData Trentino 	| This resources contains the number of facilities of Elementary Schools which are present in each municipality of the autonomous province of Trento.                                                                                                                                                                                                                                                                                                                        	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	  |
+| [Nidi di Infanzia](ttps://dati.trentino.it/dataset/nidi-dinfanzia2)                                                            	| CSV    	| OpenData Trentino 	| This resource contains the number of facilities of Nursery Schools that are present in each municipality of the autonomous province of Trento.                                                                                                                                                                                                                                                                                                                            	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
+| [Scuole d'Infanzia](https://dati.trentino.it/dataset/scuole-dinfanzia2)                                                        	| CSV    	| OpenData Trentino 	| This resource contains the number of facilities of Kindergartens that are present in each municipality of the autonomous province of Trento.                                                                                                                                                                                                                                                                                                                              	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
+| [Scuole Elementari](https://dati.trentino.it/dataset/scuole-elementari2)                                                       	| CSV    	| OpenData Trentino 	| This resource contains the number of facilities of Elementary Schools which are present in each municipality of the autonomous province of Trento.                                                                                                                                                                                                                                                                                                                        	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	  |
 | [Scuole Medie superiori](https://dati.trentino.it/dataset/scuole-medie-superiori-e-centri-di-formazione-professionale2)        	| CSV    	| OpenData Trentino 	| This resources contains the number of facilities of High Schools which are present in each municipality of the autonomous province of Trento.                                                                                                                                                                                                                                                                                                                               	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
 | [Scuole Medie inferiori](https://dati.trentino.it/dataset/scuole-media-inferiori2)                                             	| CSV    	| OpenData Trentino 	| This resources contains the number of facilities of Middle Schools which are present in each municipality of the autonomous province of Trento.                                                                                                                                                                                                                                                                                                                             	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
 | [Insegnamenti e corsi di studio dell'Università di Trento](https://dati.trentino.it/dataset/insegnamenti-universita-di-trento) 	| JSON   	| OpenData Trentino 	| his dataset provides information about all the courses the University of Trento provides.                                                                                                                                                                                                                                                                                                                                                                                   	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
-| [Istituzioni scolastiche del Trentino](https://dati.trentino.it/dataset/istituzioni-scolastiche-trentino)                      	| CSV    	| OpenData Trentino 	| The dataset contains information about all educational facilities presents in Trentino. The relevant information which are listed are the address, the name and the type.                                                                                                                                                                                                                                                                                                   	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
+| [Istituzioni scolastiche del Trentino](https://dati.trentino.it/dataset/istituzioni-scolastiche-trentino)                      	| CSV    	| OpenData Trentino 	| The dataset contains information about all educational facilities presents in Trentino. The relevant information which is listed is the address, the name, and the type.                                                                                                                                                                                                                                                                                                   	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
 | [Corsi di studio scuole Trentine](https://dati.trentino.it/dataset/corsi-di-studio-delle-scuole-trentine)                      	| XML    	| OpenData Trentino 	| The resource concerns the courses each school in Trentino offers                                                                                                                                                                                                                                                                                                                                                                                                            	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
 | [Invalsi Servizio Statistico Cineca](https://invalsi-serviziostatistico.cineca.it/)                                            	| CSV    	| CINECA            	| This dataset contains the average score of the [Invalsi tests](https://it.wikipedia.org/wiki/Prove_nazionali_INVALSI) per municipality. Their goal is to assess students' learning levels of Italian, Math, and English at critical points in the academic year.                                                                                                                                                                                                            	| [CC Attribution v4.0](https://creativecommons.org/licenses/by/4.0/) 	|
 | [Google Reviews](https://developers.google.com/)                                                                               	| HTML   	| Google            	| This resource concerns the reviews that other people leave on points of interest around the world. They can give pretty meaningful information regarding how people have felt about a given school facility either concerning their education or the ones of others they know.                                                                                                                                                                                              	| [CC Attribution v3.0](https://creativecommons.org/licenses/by/3.0/) 	|
@@ -83,11 +83,11 @@ In order to formulate a purpose, one must first define the project's domain of i
 
 We have identified the domain of interest, and built 11 distinct personas and 10 various scenarios with a variety of features, with the subsequent definition of the competency questions.
 
-All the personas, scenarios and competency questions are present within the project report and project repository. In the remaining part of this section, we show an example of persona, scenario and competency question.
+All the personas, scenarios, and competency questions are present within the project report and project repository. In the remaining part of this section, we show an example of persona, scenario, and competency question.
 
 | Persona | Personal Information | Differentiator |
 |--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| ![Persona](assets/hermann.jpg)              | Age: 55 <br>Sex: Male<br>Occupation: worker<br>Driver: yes<br>Education: PhD         | Hermann is a 55-year-old man from Austria and he works as a senior researcher at Stanford University, United States. His research area is mostly focused on the importance of education and how to improve it during each stage of life. His latest work is carried out in collaboration with the European Schoolnet, which is an organization headquartered in Brussels, with the aim of innovating both education and learning in Europe. Therefore, as the first step for his work he has to collect basic information in regard of the educational activities that take place in all Europe, Trentino included. More specifically, he has to retrieve all details of the schools such as the school name, the country municipality, the courses that the school offers, and a reference contact in case of additional question  |
+| ![Persona](assets/hermann.jpg)              | Age: 55 <br>Sex: Male<br>Occupation: worker<br>Driver: yes<br>Education: PhD         | Hermann is a 55-year-old man from Austria and he works as a senior researcher at Stanford University, United States. His research area is mostly focused on the importance of education and how to improve it during each stage of life. His latest work is carried out in collaboration with the European Schoolnet, which is an organization headquartered in Brussels, with the aim of innovating both education and learning in Europe. Therefore, as the first step for his work he has to collect basic information in regard to the educational activities that take place in all of Europe, Trentino included. More specifically, he has to retrieve all details of the schools such as the school name, the country municipality, the courses that the school offers, and a reference contact in case of additional questions |
 
 
 | Scenario | Description |
@@ -98,7 +98,7 @@ All the personas, scenarios and competency questions are present within the proj
 | ------ | -------- | ---- | -------- | -------- | -------- |
 | 6  | 6 | Give me the top rated kindergartens near Pergine Valsugana | Education Institute, School | Subregional Academic Division | Education quality, Review |
 
-Finally, in this phase we have collected the first informal resources needed in order to build the final knowledge graph. All the resources can be found within the project repository.
+Finally, in this phase, we have collected the first informal resources needed in order to build the final knowledge graph. All the resources can be found within the project repository.
 
 # Informal modeling
 
@@ -178,7 +178,7 @@ This procedure was conducted on *KarmaLinker*, which is a tool compliant with th
 
 Once the mapping has been performed, *KarmaLinker* produces the RDF file for each EType, which can then be used in order to load data in *GraphDB*.
 
-# Answer to the competency questions
+# Answer the competency questions
 
 The objective of this project is to integrate data and knowledge related to Trentino educational facilities into a knowledge graph so that users can use it to get the answers to their queries.
 In compliance with the final objective, we used *SPARQL* via *GraphDB* to see whether our model can be applied to real-world scenarios. As evidenced by the outcomes of certain deployed instances, our model answers the queries in a satisfactory way. 
@@ -210,7 +210,7 @@ select ?school_name ?municipality_name ?score where {
 } order by desc(?score) LIMIT 10	
 ```
 
-### Give me % of student that abandoned a particular institute
+### Give me % of students that abandoned a particular institute
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -232,7 +232,7 @@ select ?institute_name ?year ?dropout_number_of_students ?dropout_percentage whe
 ```
 
 # Resources
-In this section, we present the list of resources which can be consulted in order to know more about the project.
+In this section, we present the list of resources that can be consulted in order to know more about the project.
 
 ## Authors
 Here you can find the contact information in order to get in touch with us:
@@ -244,7 +244,7 @@ Here you can find the contact information in order to get in touch with us:
 
 
 ## GitHub repository
-All the materials, concerning the Personas, Competency Questions, Ontologies, Teleology, Teleontology, KG and *SPARQL* queries are listed below:
+All the materials, concerning the Personas, Competency Questions, Ontologies, Teleology, Teleontology, KG, and *SPARQL* queries are listed below:
 
 ## Google Drive folder
 
@@ -252,4 +252,9 @@ Link: [Google Drive Folder](https://drive.google.com/drive/folders/1X7iKpIhawEzT
 
 ## Project Report
 
+- [Compressed Version: around 9MB](https://raw.githubusercontent.com/samuelebortolotti/Education-Trentino/main/Documentation/KGE_2022_Education_In_Trentino_Project_Report_Bortolotti_Samuele_Robbi_Erich_Compressed_Version.pdf)
+- [Uncompressed Version: around 40MB](https://raw.githubusercontent.com/samuelebortolotti/Education-Trentino/main/Documentation/KGE_2022_Education_In_Trentino_Project_Report_Bortolotti_Samuele_Robbi_Erich.pdf)
+
 ## Project Presentation
+
+Link: [Slides](https://raw.githubusercontent.com/samuelebortolotti/Education-Trentino/main/Documentation/KGE_2022_Education_In_Trentino_Project_Report_Bortolotti_Samuele_Robbi_Erich_Presentation.pdf)
